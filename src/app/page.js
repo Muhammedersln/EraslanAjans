@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="relative group">
                   <div className="absolute inset-0 bg-accent/5 scale-0 rounded-2xl transition-transform duration-300 group-hover:scale-100"></div>
                   <div className="relative p-4">
-                    <div className="text-4xl font-bold text-accent mb-2">500+</div>
+                    <div className="text-4xl font-bold text-accent mb-2">100+</div>
                     <div className="text-sm text-lighttext">Mutlu Müşteri</div>
                   </div>
                 </div>
