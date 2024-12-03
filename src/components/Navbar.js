@@ -16,7 +16,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-2xl font-bold  text-primary-dark bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className="text-2xl font-bold  text-primary-dark bg-clip-text  hover:scale-105 transition-transform"
           >
             Eraslan Ajans
           </Link>
