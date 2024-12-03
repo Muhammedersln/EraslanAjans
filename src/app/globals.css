@@ -3,20 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #ededed;
+  --background-color: #F5F5F5;
+  --text-color: #2A2A2A;
+  --primary-color: #4A4A4A;
+  --secondary-color: #808080;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #ededed;
+    --background-color: #E0E0E0;
+    --text-color: #2A2A2A;
+    --primary-color: #333333;
+    --secondary-color: #595959;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,4 +41,51 @@ body {
 
 .swiper-pagination-bullet-active {
   background: #000 !important;
+}
+
+/* Navbar için smooth transition */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Navbar animasyonları */
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-item {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Smooth scrolling için */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Genel transition sınıfları */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }

@@ -29,14 +29,14 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-darktext mb-4">
-            Profesyonel <span className="text-accent">Hizmetlerimiz</span>
+          <h2 className="text-4xl font-bold text-text-default mb-4">
+            Profesyonel <span className="text-primary">Hizmetlerimiz</span>
           </h2>
-          <div className="w-24 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
-          <p className="text-lighttext text-lg">
+          <div className="w-24 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
+          <p className="text-text-light text-lg">
             Dijital dünyada başarıya ulaşmanız için ihtiyacınız olan tüm hizmetleri sunuyoruz
           </p>
         </div>
@@ -45,20 +45,20 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-surface rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1"
+              className="bg-background-light rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-darktext mb-3 group-hover:text-accent transition-colors">
+              <h3 className="text-xl font-bold text-text-default mb-3 group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
-              <p className="text-lighttext mb-6">
+              <p className="text-text-light mb-6">
                 {service.description}
               </p>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-sm text-lighttext">
+                  <li key={idx} className="flex items-center text-sm text-text-light">
                     <svg
-                      className="w-4 h-4 mr-2 text-accent"
+                      className="w-4 h-4 mr-2 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

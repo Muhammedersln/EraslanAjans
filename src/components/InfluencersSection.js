@@ -53,7 +53,7 @@ const InfluencersSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Çalıştığımız <span className="text-blue-600">Influencerlar</span>
+            <span className='text-primary-light'>Çalıştığımız</span> <span className="text-primary-dark">Influencerlar</span>
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 text-lg">
